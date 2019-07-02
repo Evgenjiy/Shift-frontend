@@ -1,4 +1,4 @@
-// Пример получения и вывода списка книг
+// Пример получения
 const renderBook = book => `
     <div class="book">
         <div class="book_name">${book.name}</div>
