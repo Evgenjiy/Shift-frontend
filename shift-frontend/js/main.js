@@ -1,4 +1,21 @@
-// Пример получения
+const createUser = function () {
+
+    const userName = "IvanIvan";
+
+    createRequest({ path: `/api/v001/user/create`, method: "POST" }, {}, {})
+    .then(response => {
+        toggleClass(".add-user", "loading");
+        console.log("Юзер добавлен", response);
+    })
+    .catch(() => {
+        toggleClass(".add-user", "loading");
+        console.log("Не удалось добавить юзера");
+    });
+}
+
+createUser();
+
+// Пример получения и вывода списка книг
 const renderBook = book => `
     <div class="book">
         <div class="book_name">${book.name}</div>
@@ -7,17 +24,17 @@ const renderBook = book => `
 `;
 
 const getAllBooks = function() {
-  createRequest({ path: "/api/v001/books", method: "GET" })
+  createRequest({ path: "/api/v001/users", method: "GET" })
     .then(response => {
-      document.querySelector("#books").innerHTML = response
+        document.querySelector("#users").innerHTML = response
         .map(renderBook)
         .join("");
-      console.log("Результат запроса книг", response);
+      console.log("Результат запроса юзеров", response);
     })
     .catch(err => {
-      document.querySelector("#books").innerHTML =
-        "Не удалось получить список книг";
-      console.log("Ошибка при получении списка книг", err);
+        document.querySelector("#users").innerHTML =
+            "Не удалось получить список юзеров";
+      console.log("Ошибка при получении списка юзеров", err);
     });
 };
 
