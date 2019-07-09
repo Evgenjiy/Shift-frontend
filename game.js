@@ -1,23 +1,17 @@
+const createUser = function () {
 
+    const userName = "IvanIvan";
 
-
-
-const addBookForm = document.querySelector("#add-book");
-addBookForm.addEventListener("submit", event => {
-  event.preventDefault();
-
-  const data = getFieldData(event.target);
-  console.log("main", "data", data);
-
-  toggleClass(".add-book", "loading");
-
-  createRequest({ path: `/api/v001/books`, method: "POST" }, {}, data)
+    createRequest({ path: `/api/v001/user/create`, method: "POST" }, {}, {})
     .then(response => {
-      toggleClass(".add-book", "loading");
-      console.log("Книга добавлена", response);
+        toggleClass(".add-user", "loading");
+        console.log("Юзер добавлен", response);
     })
     .catch(() => {
-      toggleClass(".add-book", "loading");
-      console.log("Не удалось добавить книгу");
+        toggleClass(".add-user", "loading");
+        console.log("Не удалось добавить юзера");
     });
-});
+}
+
+
+
