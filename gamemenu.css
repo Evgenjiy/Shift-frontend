@@ -5,14 +5,42 @@ html, body {
 
 hr {
 	background-image: linear-gradient(-105deg, #DEE736, #D8E78C);
+	
+	
+}
+
+.topMenu {
+	background-color:#DEE736;
+	font-size: 15px;
+    height: 16px;
+    text-align: center;
+    width: 532px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 3px 0;
+    margin: 0 2px;
+}
+
+ a.showLink, a.hideLink {
+                           text-decoration: none;
+                           color: red;
+                           padding-left: 8px;
+                           }
+						   
+ a.showLink:hover, a.hideLink:hover {
+                           color: #36f;
+                           }
+
+.bord {
+	padding-top: 20px;
 }
 
 .bord p {
   display: inline-block;
-  vertical-align: top;
-  width: 40%;
+  /*vertical-align: top;
+  width: 40%;*/
   margin: 0 5px;
-  text-align: center;
+  /*text-align: center;*/
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -26,13 +54,35 @@ hr {
 
 .setImage1 {
 	background-color: #F0E68C;
-	height: 150px;
-	width: 365px;
+	height: 200px;
+	width: 420px;
 	border-radius:10px;
+}
+
+.srf {
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .paddingDiv {
 	text-align: center;
+	padding-top: 100px;
+}
+
+.scoreLeft {
+	text-align: center;
+	position: absolute;
+	left: 100px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.scoreRight {
+	text-align: center;
+	position: absolute;
+	Right:100px;
+	font-size:30px;
+	font-weight: bold;
 }
 
 .button {
@@ -40,6 +90,27 @@ hr {
 	z-index: 1;
 	background-color: #C4C1E7 ;
 	border-radius: 10px;
+	
+}
+
+
+
+.num {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #FFFFF0;
+	z-index: 2;
+	border: 3px double black;
+	border-width: 3px;
+	border-color: #000080;
+	font-weight: bold;
+	font-size: 40px;
+	
+}
+
+.numLeft {
+	margin-left:370px;
 }
 
 .image {
@@ -47,5 +118,72 @@ hr {
 }
 
 .btnsdwn {
-	padding-top: 10px;
+	position: fixed;
+	bottom:5px;
+	padding: 5px;
+	z-index: 1;
+	
+}
+
+.btnsdwn1 {
+	position: fixed;
+	bottom: 15px;
+	padding: 5px;
+	z-index: 2;
+	
+}
+
+.btnsdwn1 span {
+	display: inline-block;
+  vertical-align: top;
+
+  margin: 0 5px;
+  text-align: center;
+}
+
+.kanobu1 {
+	position: absolute;
+	top: 23%;
+	left: 59%;
+	width: 200px;
+	height: 200px;
+	 -webkit-animation-name: spin;
+    -webkit-animation-duration: 5000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 5000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 5000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+ 
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }

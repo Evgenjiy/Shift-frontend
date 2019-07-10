@@ -21,3 +21,14 @@
 	</div>-->
   <!--</body>-->
 
+
+
+<frameset rows="60%,*" frameborder="yes" bordercolor="#DEE736">
+		<frame noresize src="top.html">
+			
+		<frame noresize src="low.html">
+	</frameset>
+	
+<!--<div>
+		<a href="menu_1.html" rel="up">Назад</a>
+	</div>-->

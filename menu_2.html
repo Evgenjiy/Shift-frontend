@@ -1,19 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
 	<title>Камень ножницы бумага</title>
 	<link rel="stylesheet" href="gamemenu.css">
-	<link rel="icon" href="kanobu.png" type="image/x-icon">
+	<link rel="icon" href="images/kanobu.png" type="image/x-icon">
   </head>
+	<body>
+		<div>
+			<!--Выпадающее меню со справкой об игре-->
+			<!----><div id="topMenu" class="topMenu" >
+						<span>Камень, ножницы, бумага.</span>
+						<a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">Описание игры.</a>
+						<div style="display:none" id="example">
+							<p>ПравилаПравилаПравила</p>
+							<p><a href="1" id="example-hide" class="hideLink" onclick="showHide('example');return false;">Спрятать.</a></p>
+						</div>
+				</div>
+            <!---->
+ 
+			<div id='resultsGame'><span class="resultFirst"></span><!--Поле с отображением результата раунда(и не только)-->
+				</div>
+			<div class="paddingDiv">
+					<section class="bord">
+						<p class="scoreLeft" id="scoreP1">Score:<br>523</p><!--Счет-->
+						<p class="srf"> <img class="setImage0" id="imagePlayer1" src="images/ROCK.png"/> <br>Ваш выбор </p><!--Ниже: раскомментить чтобы спинер спрятался-->
+						<p class="srf"> <img class="setImage1" id="imagePlayer2"/><img src="images/kanobu.png" class="kanobu1"> <!--style="display: none"--> <br>Выбор противника </p>
+						<p class="scoreRight" id="scoreP2">Score:<br>324</p>
+					</section>
+			</div>
+		<hr size="5" >
+		<div class="btnsdwn1">
+			<section><!--Круги с количеством использований-->
+				<form id="resaultClick" class="buttons">
+					<span><div class="num" id="numberRocks" style="color: #FF8C00;">4</div></span>
+					<span><div class="num numLeft" id="numberScissors" style="color: #FF0000;">4</div></span>
+					<span><div class="num numLeft" id="numberPapers" style="color: #00CED1;">4</div></span>
+				</form>
+			</section>
+		</div>
+		<div class="btnsdwn">
+			<section>
+				<form id="resaultClick" class="buttons">
+					<button class="button" type="submit" id="ROCK"><img alt="" src="images/ROCK.png" style="vertical-align:middle" width="420" height="200" class="image" /></button>
+					<button class="button" type="submit" id="SCISSORS"><img alt="" src="images/scissors.png" style="vertical-align:middle" width="420" height="200" class="image" /></button>
+					<button class="button" type="submit" id="PAPER"><img alt="" src="images/PAPER.png" style="vertical-align:middle" width="420" height="200" class="image" /></button>
+				</form>
+			</section>
+		</div>
+		<script language="javascript" type="text/javascript">
+            function showHide(shID) {
+               if (document.getElementById(shID)) {
+                  if (document.getElementById(shID+'-show').style.display != 'none') {
+                     document.getElementById(shID+'-show').style.display = 'none';
+                     document.getElementById(shID).style.display = 'block';
+                  }
+                  else {
+                     document.getElementById(shID+'-show').style.display = 'inline';
+                     document.getElementById(shID).style.display = 'none';
+                  }
+               }
+            }
+        </script>
   
-	<frameset rows="60%,*" frameborder="yes" bordercolor="#DEE736">
-		<frame noresize src="top.html">
-			
-		<frame noresize src="low.html">
-	</frameset>
-	
-	
-	 <script src="/game.js"></script>
-
+		<script src="/game.js"></script>
+	 </div>
+	</body>
  </html>
