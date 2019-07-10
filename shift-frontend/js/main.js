@@ -7,6 +7,7 @@ var roundsCount = 0;
 const button_ROCK = document.querySelector('#ROCK');
 const button_SCISSORS = document.querySelector('#SCISSORS');
 const button_PAPER = document.querySelector('#PAPER');
+const element_me = document.querySelector('#elements_me');
 
 
 const createUser = function (userName) {
@@ -70,6 +71,9 @@ const setMove = function (roomId, userId, userMove) {
     button_ROCK.disabled = true;
     button_SCISSORS.disabled = true;
     button_PAPER.disabled = true;
+
+    console.log("url",`url('${userMove}.png')`);
+    element_me.style.backgroundImage = "url('"+userMove+".png')";
 
     createRequest({ path: `/api/v001/room/${roomId}/${userId}/move`, method: "PUT" }, {}, {}, "userMove", userMove)
         .then(response => {

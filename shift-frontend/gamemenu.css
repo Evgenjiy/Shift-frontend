@@ -3,11 +3,45 @@ html, body {
   background-image: linear-gradient(-105deg, #009acc, #363795);
 }
 
+hr {
+	background-image: linear-gradient(-105deg, #DEE736, #D8E78C);
+}
+
+.bord p {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  margin: 0 5px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.setImage0 {
+	background-color: #F0E68C;
+	height: 200px;
+	width: 420px;
+	border-radius:10px;
+}
+
+.setImage1 {
+	background-color: #F0E68C;
+	height: 150px;
+	width: 365px;
+	border-radius:10px;
+}
+
+.paddingDiv {
+	text-align: center;
+}
+
 .button {
 	
 	z-index: 1;
 	background-color: #C4C1E7 ;
 	border-radius: 10px;
+	height: 160px;
+    width: 30%;
 }
 
 .image {
@@ -15,5 +49,5 @@ html, body {
 }
 
 .btnsdwn {
-	padding-top: 370px;
+	padding-top: 10px;
 }

@@ -1,0 +1,1009 @@
+html, body, div, span, object, h1, h2, h3, p, a, em, font, img, strong, ul, li, form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: Verdana;
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.vkgame #wrap {
+    overflow-y: auto;
+}
+
+.vkgame #wrap #container {
+    margin: 5px 9px;
+    position: relative;
+    width: 974px !important;
+}
+
+.vkgame #game-wrap {
+    background-color:#D1F7CA;
+}
+
+
+.vkgame #gameObject {
+    /*background-color: white;*/
+}
+
+.vkgame #resultsGame {
+    /*background-color: white;*/
+}
+
+#container {
+    margin: 30px auto;
+    position: relative;
+    width: 846px !important;
+    padding-top: 2px;
+}
+
+#container #field {
+    display: inline-block;
+    width: 540px;
+    background: #fff;
+    border-radius: 4px;
+    padding-top: 2px;
+    vertical-align: top;
+    position: relative;
+}
+
+#container #left {
+    vertical-align: top;
+    display: inline-block;
+    width: 277px;
+    margin-right: 19px;
+}
+
+#container #left .tab, .tabch {
+    border-radius: 2px;
+    color: #006699;
+    font: normal normal 700 13.33px/normal Verdana;
+    display: inline-block;
+    width: 112px;
+    padding: 3px 6px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.tabch {
+    width: 104px;
+    cursor: pointer;
+    float: left;
+}
+
+#container #left .tab.select, #container #left .tab.select:hover {
+    background: rgba(100, 142, 163, .18);
+}
+
+#container #left .tab .tab-a {
+    font-weight: normal;
+}
+
+#container #left .tab:hover {
+    background: rgba(100, 142, 163, 0.180);
+}
+
+#container #left #serch_name {
+    width: 125px;
+    height: 18px;
+    color: #444;
+    margin: 10px -3px;
+    padding: 0px 1px;
+    border: 1px solid #ccc;
+}
+
+#container #left #serch_name:hover {
+    border: 1px solid #4D90FE;
+    transition: border 0.3s cubic-bezier(0, 0, 0.58, 1);
+}
+
+#container #left #gamefree {
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    min-width: 64px;
+    outline: 0 none currentColor;
+    text-align: center;
+    white-space: nowrap;
+    background-color: rgba(100, 142, 163, 0.18);
+    border: 1px solid rgba(0, 0, 0, 0.149);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.047);
+    color: #069;
+    text-decoration: none;
+    margin-top: 3px;
+    vertical-align: top;
+    width: 260px;
+}
+
+#container #left #gamefree.on {
+    background: #f7f791;
+}
+
+#container #left .show-tab {
+    background: url("http://logic-games.spb.ru/gomoku/img/expand.png") no-repeat;
+    background-size: 10px;
+    background-position: 5px 50%;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    vertical-align: top;
+    width: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#container #left .show-tab:hover {
+    border: 1px solid #AAAAAA;
+}
+
+#container #left .show-tab.show-arrow-up {
+    background-image: url("http://logic-games.spb.ru/gomoku/img/expand2.png");
+}
+
+/*****************
+** Р’РµСЂС…РЅРµРµ РјРµРЅСЋ
+*/
+#topMenu {
+    font-size: 13px;
+    height: 16px;
+    text-align: center;
+    width: 532px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 3px 0;
+    margin: 0 2px;
+}
+
+#topMenu span {
+    font-weight: bold;
+    margin: 0 3px;
+}
+
+#topMenu a {
+    display: inline-block;
+    margin: 0 6px;
+    color: #000;
+    text-decoration: none;
+}
+
+#topMenu a:hover {
+    text-decoration: underline;
+}
+
+#topMenu #gbShow {
+    float: none !important;
+    padding-right: 0 !important;
+}
+
+#info {
+    font-size: 12px;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    background: #DFE7EA;
+    height: 45px;
+    margin: 2px;
+}
+
+#info .myNick, #info .hisNick {
+    height: 14px;
+    margin-top: 15px;
+}
+
+#info .rating {
+    color: #AAA;
+    margin-left: 6px;
+    font-size: 80%;
+}
+
+#info .left-block {
+    float: left;
+}
+
+#info .right-block {
+    float: right;
+}
+
+#info .left-block, #info .right-block {
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+}
+
+#info .action {
+    font-size: 11px;
+    height: 13px;
+}
+
+#info .action span {
+    font-weight: bold;
+}
+
+#info .money {
+    font-size: 11px;
+    height: 13px;
+    margin-left: -22px;
+}
+
+#info #tutorial {
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    top: 16px;
+    font-size: 16px;
+}
+
+#info #tutorial-all {
+    color: #AAA;
+    font-size: 10px;
+    width: 50px;
+    height: 14px;
+    position: absolute;
+    left: 50%;
+    margin-lefT: 18px;
+    top: 21px;
+}
+
+#info #actionPlayers {
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    width: 140px;
+    top: 34px;
+    font-size: 13px;
+    color: #408E40;
+}
+
+#info #actionPlayers.redh {
+
+    color: #d56c63;
+}
+
+/* РўРµР»Рѕ РёРіСЂС‹ */
+#game-wrap {
+    min-height: 535px;
+    padding: 1px;
+    position: relative;
+}
+
+#game {
+    position: absolute;
+    top: 115px;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.style_0 #game .elements {
+    display: inline-block;
+    margin: 0 70px;
+    vertical-align: top;
+    text-align: center;
+    height: 160px;
+    position: relative;
+    width: 30%;
+}
+
+.style_0 #game .elements span {
+    display: block;
+    position: absolute;
+    text-align: center;
+    /*width: 100%;*/
+
+    width: 128px;
+    margin-left: -15px;
+}
+
+.style_0  #game .element {
+    cursor: pointer;
+    width: 99px;
+    height: 119px;
+    /* background: url(../images/elements.png) no-repeat; */
+    background-position: 0 25px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.style_0 #game .element.rock {
+    background-position: 0 34px;
+}
+
+.style_0 #game .element.scissors {
+    background-position: 0 -86px;
+}
+
+.style_0 #game .element.paper {
+    background-position: 0 -205px;
+}
+
+.style_0 #game .element.rock.win {
+    background-position: -100px 34px;
+}
+
+.style_0 #game .element.scissors.win {
+    background-position: -100px -86px;
+}
+
+.style_0 #game .element.paper.win {
+    background-position: -100px -205px;
+}
+
+.style_0 #game .element.rock.lose {
+    background-position: -199px 34px;
+}
+
+.style_0 #game .element.scissors.lose {
+    background-position: -199px -86px;
+}
+
+.style_0 #game .element.paper.lose {
+    background-position: -199px -205px;
+}
+/* СЃС‚РёР»СЊ 1*/
+.style_1 #game .element {
+    cursor: pointer;
+    width: 125px;
+    height: 119px;
+    background: url(../images/elements_1.png) no-repeat;
+    background-position: 0 25px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+.style_1 #game .element.rock {
+    background-position: -243px -5px;
+}
+
+.style_1 #game .element.scissors {
+    background-position: 4px -5px;
+    width: 117px;
+
+}
+
+.style_1 #game .element.paper {
+    background-position: -111px -5px;
+}
+
+.style_1 #game .elements {
+    display: inline-block;
+    /* margin: 0 42px; */
+    vertical-align: top;
+    text-align: center;
+    height: 160px;
+    position: relative;
+    width: 125px;
+}
+.style_1 #game .elements span {
+    display: block;
+    position: absolute;
+    text-align: center;
+    /*width: 100%;*/
+
+    width: 153px;
+    margin-left: -15px;
+}
+
+/* С‚РµР»Рѕ РёРіСЂС‹ > РЅРёР¶РЅРёРµ СЌР»РµРјРµРЅС‚С‹*/
+#gameObject {
+    height: 140px;
+    position: absolute;
+    text-align: center;
+    top: 335px;
+    width: 100%;
+    display: none;
+}
+
+#gameObject .elements {
+    display: inline-block;
+    margin: 23px 35px 0;
+}
+
+.gameObject__disabled .elements {
+    opacity: 0.4!important;
+}
+
+.style_0  #gameObject .element {
+    cursor: pointer;
+    width: 68px;
+    height: 82px;
+    background: url(../images/elements.png) no-repeat;
+    background-size: 274px auto;
+    margin-bottom: 5px;
+}
+
+
+.style_0 #gameObject .element.rock {
+    background-position: 0 23px;
+}
+
+
+.style_0 #gameObject:not(.gameObject__disabled) .element.rock:hover, #gameObject .element.rock.on {
+    background-position: -206px 23px;
+}
+
+.style_0 #gameObject .element.scissors {
+    background-position: 0 -59px;
+}
+
+.style_0 #gameObject:not(.gameObject__disabled) .element.scissors:hover, #gameObject .element.scissors.on {
+    background-position: -206px -59px;
+}
+
+.style_0 #gameObject .element.paper {
+    background-position: 0 -141px;
+}
+
+.style_0 #gameObject:not(.gameObject__disabled) .element.paper:hover, #gameObject .element.paper.on {
+    background-position: -206px -141px;
+}
+
+#gameObject .text {
+    margin: 0 0 15px 0;
+}
+
+/* СЃС‚РёР»СЊ 1 */
+.style_1 #gameObject .element {
+    cursor: pointer;
+    width: 68px;
+    height: 82px;
+    background: url(../images/elements_1.png) no-repeat;
+    background-size: 274px auto;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+.style_1 #gameObject .element.rock {
+    background-position: -144px 6px;
+}
+.style_1 #gameObject .element.paper {
+    background-position: -65px 8px;
+}
+.style_1 #gameObject .element.scissors {
+    background-position: 4px 8px;
+}
+
+.style_1 #gameObject:not(.gameObject__disabled) .element:hover, #gameObject .element.on {
+    opacity: 1;
+}
+
+#resultsGame {
+    font-size: 34px;
+    font-family: Times New Roman;
+    color: #111;
+    text-align: center;
+    margin: 0;
+}
+
+#resultsGame span.resultFirst {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Verdana;
+    color: #111;
+    display: inline-block;
+    margin: 0 -50px;
+}
+
+#preResultsGame {
+    width: 100%;
+    height: 22px;
+    /* background: red; */
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+#ReGame {
+    font-size: 10px;
+    color: #111;
+    display: block;
+}
+
+/*****************
+** РјРѕРґР°Р»СЊРЅС‹Рµ РѕРєРЅР°
+*/
+.modalDialog {
+    font: normal normal 400 12px/normal Verdana;
+    display: none;
+}
+
+.modalDialog p {
+    margin: 0 0 5px 0;
+}
+
+.modalDialog .butt {
+    min-width: 105px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-family: Verdana;
+    font-size: 8pt;
+    border: 1px solid #AAA;
+    padding: 5px 9px 5px 9px;
+}
+
+.modalDialog p#timeout {
+    margin-top: 15px;
+}
+
+#chat-rules .close_icon {
+    right: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+#chat-rules {
+    display: none;
+    color: #444;
+    font-size: 8pt;
+    width: 670px;
+    position: absolute;
+    margin-left: 200px;
+    background: #fff;
+    z-index: 7500;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 1px #ccc;
+    padding-top: 10px;
+}
+
+.ui-dialog-titlebar {
+    display: none;
+    background: rgba(100, 142, 163, 0.180);
+}
+
+.ui-widget .ui-widget {
+    font: normal normal 400 12px/normal Verdana;
+}
+
+.ui-widget-overlay {
+    position: fixed;
+    background: none !important;
+}
+
+#parametersPanel p input {
+    margin: 3px 10px 0 0;
+    vertical-align: top;
+}
+
+#parametersPanel {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.298);
+    border-radius: 3px;
+    color: #444444;
+    display: none;
+    font-size: 14px;
+    left: 385px;
+    padding: 25px;
+    position: absolute;
+    top: 185px;
+    width: 330px !important;
+    z-index: 7500;
+}
+
+#parametersPanel .close_icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.dl {
+    background-image: url(http://logic-games.spb.ru/gomoku/img/sprite.png) !important;
+}
+
+#players {
+    background: #fafafa;
+    width: 260px;
+    padding: 10px 8px;
+    position: absolute;
+    border-radius: 2px;
+}
+
+#players #block-1 {
+    display: block;
+}
+
+#players #block-2 {
+    display: none;
+}
+
+#players #list, #players #listInGame {
+    top: 30px;
+    bottom: 10px;
+    background: #fff;
+    left: 10px;
+    right: 10px;
+    border: 1px solid #dddddd;
+    font-size: 13px;
+    width: 252px;
+    margin: 0 auto;
+    height: 203px;
+    overflow-y: scroll;
+    padding: 4px;
+}
+
+.rank_list {
+    position: absolute;
+    text-align: right;
+    width: 45px;
+    color: grey;
+    left: 109px;
+    top: 4px;
+    font-size: 7pt;
+    overflow: hidden;
+}
+
+#players #listInGame {
+    text-align: center;
+}
+
+#players #list .list-user {
+    height: 20px;
+    margin-bottom: 7px;
+    position: relative;
+}
+
+#players #list .list-username {
+    display: inline;
+    vertical-align: top;
+    height: 20px;
+}
+
+#players .connect {
+    left: 12px;
+    position: absolute;
+    top: 159px;
+    display: inline-block;
+    width: 235px;
+    text-align: center;
+}
+
+#players span.invite {
+    cursor: pointer;
+    text-align: center;
+    width: 68px;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 8pt;
+    border-right: 0;
+    background: #fff;
+    color: #069;
+    transition: box-shadow .218s;
+    padding: 3px;
+    float: right;
+    display: block;
+}
+
+#players span.invite:hover, #players span.invite.select {
+    background: #648ea3;
+    color: #fff;
+}
+
+#gameTime {
+    margin-top: 7px;
+    display: block;
+}
+
+#invite span.name, #uninvite span.name {
+    font-weight: bold;
+}
+
+#invite span.name {
+    font-weight: bold;
+}
+
+#win {
+    text-align: center !important;
+}
+
+/*****************
+** РќРёР¶РЅРµРµ РјРµРЅСЋ
+*/
+.buttonMenu {
+    display: table;
+    text-align: center;
+    margin: 2px;
+    border-spacing: 2px;
+}
+
+.buttonMenu a {
+    background: #FBFBFB;
+    border: 1px solid #B5B5B5;
+    border-radius: 4px;
+    color: #000000;
+    display: table-cell;
+    font-size: 11px;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 130px;
+    width: 530px;
+    height: 40px;
+
+}
+
+.buttonMenu a:hover {
+    background: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(#f7f7f7),
+            to(#ececec)
+    );
+    background: -webkit-linear-gradient(top, #f7f7f7, #ececec);
+    background: -moz-linear-gradient(top, #f7f7f7, #ececec);
+    background: -o-linear-gradient(top, #f7f7f7, #ececec);
+    background: linear-gradient(top, #f7f7f7, #ececec);
+}
+
+.buttonMenu a.on {
+    background: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(#FFFDEA),
+            to(#FFFED9)
+    );
+    background: -webkit-linear-gradient(top, #FFFDEA, #FFFED9);
+    background: -moz-linear-gradient(top, #FFFDEA, #FFFED9);
+    background: -o-linear-gradient(top, #FFFDEA, #FFFED9);
+    background: linear-gradient(top, #FFFDEA, #FFFED9);
+}
+
+.buttonMenu a.off {
+    color: gray;
+}
+
+.buttonMenu a.off:hover {
+    background: #FBFBFB;
+}
+
+.tableScroll .win {
+    height: 24px;
+    background: url('http://logic-games.spb.ru/skiffdev/images/boll.png') center center no-repeat;
+    background-size: 20px;
+}
+
+.tableScroll .win.red {
+    background: url('http://logic-games.spb.ru/skiffdev/images/boll-red.png') center center no-repeat;
+}
+
+.tableScroll .win.green {
+    background: url('http://logic-games.spb.ru/skiffdev/images/boll-green.png') center center no-repeat;
+}
+
+.hided, .hidden {
+    display: none;
+}
+
+#bottomInfo {
+    width: 540px;
+    position: absolute;
+    top: 730px;
+    padding-bottom: 20px;
+}
+
+#bottomInfo .bubblePanel {
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    box-shadow: none !important;
+}
+
+#dialogResult {
+    font-size: 13px;
+}
+
+#descriptionSkiff p {
+    margin: 16px 0;
+}
+
+#descriptionSkiff h2 {
+    display: block;
+    padding: 5px;
+    text-align: center;
+}
+
+/* HISTORY */
+#history-block {
+    display: none;
+}
+
+.history-block {
+
+}
+
+.rating-profile:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.history-block .rating-profile:hover, #players .rating-profile:hover {
+    text-decoration: none !important;
+    border-bottom: 1px solid #069;
+    background-color: #edf1f5;
+}
+
+.history-block table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+}
+
+.history-block table tr td {
+    border: 1px solid #DCDCDC;
+    padding: 5px;
+}
+
+.history-block table tr td.win {
+    background: #FFFFE0;
+}
+
+.history-block table tr td.defeat {
+    background: #FFE0EE;
+}
+
+.history-block table tr td.draw {
+    background: #b3d1e0;
+}
+
+.title-history {
+    background: #eeeeee;
+}
+
+.history-total-left {
+    float: right;
+    margin-right: 5px;
+}
+
+.history-rank-info {
+    color: #AAA;
+    font-size: 9px;
+}
+
+.ui-dialog {
+    left: 150px !important;
+    margin: auto;
+    position: relative !important;
+    z-index: 1000;
+}
+
+.infoHistory {
+    display: none;
+    width: 160px !important;
+    padding: 0 !important;
+}
+
+#rating-block {
+    padding: 7px;
+}
+
+#footer {
+    text-align: center;
+    margin: 10px -100px;
+    font-size: 14px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#chat-panel {
+}
+
+#chat-panel.chat-standard {
+    position: absolute;
+    top: 335px;
+
+}
+
+#chat-panel.chat-expanded {
+    position: absolute;
+    top: 0;
+    z-index: 666;
+}
+
+#chat-panel.chat-expanded #m-chat #message-list {
+    height: 565px !important;
+}
+
+.rating_victory {
+    padding-left: 45px !important;
+}
+
+#spinner_js {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    padding: 30px 0;
+    border-radius: 4px;
+}
+
+#spinner_js.background {
+    background: white;
+    padding: 30px 0;
+}
+
+.user-list {
+    width: 105px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.user-list.uleft {
+    text-align: right;
+}
+
+.user-list.uright {
+    text-align: left;
+}
+
+#inviteFriend {
+    border: 1px solid #B5B5B5;
+    border-radius: 4px;
+    background: #FBFBFB;
+    width: 265px;
+    color: #000000;
+    position: absolute;
+    bottom: -71px;
+    right: auto;
+    z-index: 998;
+}
+
+#inviteFriend:hover {
+    cursor: pointer;
+    background: -webkit-gradient(
+            linear,
+            left top, left bottom,
+            from(#f7f7f7),
+            to(#ececec)
+    );
+    background: -webkit-linear-gradient(top, #f7f7f7, #ececec);
+    background: -moz-linear-gradient(top, #f7f7f7, #ececec);
+    background: -o-linear-gradient(top, #f7f7f7, #ececec);
+    background: linear-gradient(top, #f7f7f7, #ececec);
+}
+
+.differenceElo {
+    color: red;
+    display: block;
+    margin-left: -35px;
+}
+
+.differenceElo.green {
+    color: green;
+}
+
+.timer-wrapper {
+    position: absolute;
+    top: 17px;
+    font-family: Linear,"Helvetica Neue",Arial;
+    font-size: 13px;
+    color: #AAA;
+    font-weight: bold;
+}
+
+.left-block .timer-wrapper {
+
+}
+
+.right-block .timer-wrapper {
+    right: 0px;
+}
