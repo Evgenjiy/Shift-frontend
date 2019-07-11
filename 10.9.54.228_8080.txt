@@ -32,3 +32,19 @@
 <!--<div>
 		<a href="menu_1.html" rel="up">Назад</a>
 	</div>-->
+
+
+<form id="resaultClick" class="buttons">
+					<div>
+					<button class="button" type="submit" id="ROCK"><img alt="" src="images/ROCK.png" style="vertical-align:middle" width="420" height="200" class="image" /></button>
+					<span><div class="num" id="numberRocks" style="color: #FF8C00;">4</div></span>
+					</div>
+					<div>
+					<button class="button" type="submit" id="SCISSORS"><img alt="" src="images/scissors.png" style="vertical-align:middle" width="420" height="200" class="image" /></button>
+					<span><div class="num" id="numberScissors" style="color: #FF0000;">4</div></span>
+					</div>
+					<div>
+					<button class="button" type="submit" id="PAPER"><img alt="" src="images/PAPER.png" style="vertical-align:middle" width="420" height="200" class="image" /></button>
+					<span><div class="num" id="numberPapers" style="color: #00CED1;">4</div></span>
+					</div>
+				</form>

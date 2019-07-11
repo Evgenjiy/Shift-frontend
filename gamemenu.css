@@ -19,6 +19,21 @@ hr {
     border-radius: 4px;
     padding: 3px 0;
     margin: 0 2px;
+	color: #36f;
+	position: fixed;
+	z-index: 3;
+}
+
+.orders {
+	background-color:#DEE736;
+	font-size: 15px;
+    height: auto;
+    text-align: center;
+    width: 532px;
+    border: 2px solid black;
+    color: #000000;
+	border-top: dashed;
+	z-index: 3;
 }
 
  a.showLink, a.hideLink {
@@ -31,8 +46,19 @@ hr {
                            color: #36f;
                            }
 
+.resaultFirst {
+	position: fixed;
+	padding-top: 50px;
+	padding-left: 45%;
+	text-align:center;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
 .bord {
 	padding-top: 20px;
+	z-index: 2;
 }
 
 .bord p {
@@ -43,6 +69,7 @@ hr {
   /*text-align: center;*/
   background-repeat: no-repeat;
   background-position: center top;
+  z-index: 2;
 }
 
 .setImage0 {
@@ -67,6 +94,7 @@ hr {
 .paddingDiv {
 	text-align: center;
 	padding-top: 100px;
+	z-index: 2;
 }
 
 .scoreLeft {
@@ -75,6 +103,7 @@ hr {
 	left: 100px;
 	font-size: 30px;
 	font-weight: bold;
+	z-index: 2;
 }
 
 .scoreRight {
@@ -83,6 +112,7 @@ hr {
 	Right:100px;
 	font-size:30px;
 	font-weight: bold;
+	z-index: 2;
 }
 
 .button {
@@ -125,7 +155,7 @@ hr {
 	
 }
 
-.btnsdwn1 {
+.circleResault {
 	position: fixed;
 	bottom: 15px;
 	padding: 5px;
@@ -133,17 +163,42 @@ hr {
 	
 }
 
-.btnsdwn1 span {
+.circleResault span {
 	display: inline-block;
   vertical-align: top;
 
   margin: 0 5px;
   text-align: center;
 }
+@media screen and (min-width: 480px) and (max-width: 1360px){ paddingDiv, setImage0, setImage1, scoreLeft, scoreRight, button    }
 
 .kanobu1 {
 	position: absolute;
-	top: 23%;
+	top: 21%;
+	left: 27%;
+	width: 200px;
+	height: 200px;
+	 -webkit-animation-name: spin;
+    -webkit-animation-duration: 5000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 5000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 5000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+ 
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.kanobu2 {
+	position: absolute;
+	top: 21%;
 	left: 59%;
 	width: 200px;
 	height: 200px;
